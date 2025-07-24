@@ -21,4 +21,10 @@ class Solution:
             elif tmp_h > h:
                 front = mid+ 1
         return result
-        
+
+  """
+    如何知道該用「二分答案」,類型特徵
+    - 你要找某個數值的最小值或最大值
+    - 有一個“條件判斷函數”f(x)，你可以用它來驗證「這個 x 可不可以」
+    - 當 x 越大 / 越小時，條件的結果是單調的（monotonic）
+    """
